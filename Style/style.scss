@@ -1,3 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
-  background: blue;
+  max-width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #264653;
+}
+#pageContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+#instruction-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e9c46a;
+
+  & p {
+    width: 50%;
+  }
+  & button {
+    width: 20%;
+    margin: 5vh;
+    background: #2a9d8f;
+    color: #f1faee;
+    border: none;
+    border-radius: 25px;
+    padding: 1vh;
+    cursor: pointer;
+  }
+  & button:hover {
+    filter: brightness(110%);
+  }
+  & button:focus {
+    outline: none;
+  }
+}
+#game-container {
+  display: flex;
+  width: 700px;
+  height: 700px;
+  flex-wrap: wrap;
+  border: 0.1px solid black;
+}
+.squares {
+  background: white;
+  border: 0.1px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
